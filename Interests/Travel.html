@@ -1,6 +1,77 @@
 <!DOCTYPE html>
 <html>
     <head>
+         <style>
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #008CBA;
+  border: none;
+  color: #e7e7e7;
+  text-align: center;
+  font-size: 28px;
+  padding: 15px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+</style>
+
+<style>
+    <style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding:  5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 1px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 3px solid #555555;
+}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+</style>
+
         <meta charset="utf-8"/>
         <title>Sports</title>
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
@@ -25,16 +96,15 @@
             
     </head>
     <body>
-        
+        <button href="/menu.html" class="button button5">Back</button><br/>
         <div id="pagepiling">
 	        <div class="section" id="section1">Most travelled To: Perth, Australia</div>
 	        <div class="section" id="section2">Want to visit: New York</div>
 	        <div class="section" id="section3">
 	            Settle in: London
 	            <br/>
-	            <a href="/homepage/html" class="btn btn-success">Home</a>
 	            
-        <a href="/ebusiness/ebus1.php" class="btn-dark">View my Cloud Services Online Shop</a>
+	            	        <button href="/ebusiness/ebus1.php" class="button" style="vertical-align:middle"><span>View my Cloud Services Online Shop</span></button><br/>
 	        </div>
         </div>
     </body>
