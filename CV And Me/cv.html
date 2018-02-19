@@ -5,37 +5,50 @@
         <style type="text/css">
   .rightfloat{
         float:right;
-        margin-top:5px; }
+        margin-top:5px;
+    border-radius: 12px;
+}
+
+        ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
 
 nav {
-     margin-left: 100px;
     list-style-type: none;
-    margin-left:0px;
+    margin: 0;
     padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-    height: 100%; /* Full height */
-    position: fixed; /* Make it stick, even on scroll */
-    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
 }
 
 li a {
     display: block;
-    color: #000;
-    padding: 8px 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-/* Change the link color on hover */
+/* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #555;
-    color: white;
-}  
-h1 { margin-right:100px;
+    background-color: #111;
 }
-
+        
+    h2{
+        background-color:grey;
+    }
+    
         </style>
 
+
+<link rel="stylesheet" href="/CV And Me/navigation.css" type="text/css">
+<link rel="stylesheet" type="text/css" href="/mystylesheets.css">
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Adding bootstrap-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -45,20 +58,19 @@ h1 { margin-right:100px;
     <body>
         <nav>
         <ul>
-                <li>Welcome to my website.<br/></li>
-                <li><a href="/CV And Me/cv.html">About me</a></li><br/>
-                <li><a href="/CV And Me/education.html">Education</a></li><br/>
-                  <li><a href="/CV And Me/experience.html">Experience</a></li> <br/>
-            <li><a href="/Interests/Sports.html">Sports</a></li> <br/>
-            <li><a href="/Interests/Travel.html">Travel</a></li> <br/>
+                <li><a href="/CV And Me/cv.html">About me</a></li>
+                <li><a href="/CV And Me/education.html">Education</a></li>
+                  <li><a href="/CV And Me/experience.html">Experience</a></li>
+            <li><a href="/Interests/Sports.html">Sports</a></li>
+            <li><a href="/Interests/Travel.html">Travel</a></li>
             <li><a href="/ebusiness/ebus1.php">Cloud Services Online Shop</a></li>
         </ul>
         </nav>
-        <button onclick="window.location.href='/menu.html'" class="button button5">Back</button><br/>
-   <div
+        
+        <div
    class="rightfloat">
      <img src="https://scontent-dub4-1.xx.fbcdn.net/v/t1.0-1/p160x160/21150413_10214190903504222_4997660575524288408_n.jpg?oh=ff12bb923d1851d8fc6798211a3ce80d&oe=5ADDA53E" 
-     height="200px" width="200px"/>
+     height="300px" width="250px" />
    </div>
      <h1>Rebecca Coleman</h1> 
     
@@ -83,8 +95,8 @@ h1 { margin-right:100px;
         My team and I aimed to make a difference with the effect of video games on children. 
         We extensively researched this topic and are currently trying to enforce a legislation whereby the appropriate age category is placed on all games.</p>
 </a>
-        
-        <button href="/CV And Me/PersonalInformation.html" class="button" style="vertical-align:middle"><span>Next </span></button>
+        <button href="/CV And Me/PersonalInformation.html" class="button" style="vertical-align:middle"><span>Next</span></button>
+
         
     </body>
 </html>
