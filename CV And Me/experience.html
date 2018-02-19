@@ -2,82 +2,35 @@
 <html>
     <head>
   <title>Work Experience</title>
-  <style type="text/css">
-  .leftfloat{
-        float:left;
-        margin-right:5px; }
-</style>
- <style>
-.button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #008CBA;
-  border: none;
-  color: #e7e7e7;
-  text-align: center;
-  font-size: 28px;
-  padding: 15px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 15px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-</style>
-
 <style>
-    <style>
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding:  5px;
-    text-align: center;
+     nav {
+     margin-left: 100px;
+    list-style-type: none;
+    margin-left:0px;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
     text-decoration: none;
-    display: inline-block;
-    font-size: 8px;
-    margin: 1px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
 }
 
-.button5 {
-    background-color: white;
-    color: black;
-    border: 3px solid #555555;
-}
-
-.button5:hover {
-    background-color: #555555;
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
     color: white;
+}  
+h1 { margin-right:100px;
 }
-</style>
 
+</style>
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Adding bootstrap-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -86,6 +39,15 @@
     
      </head>
      <body>
+         <nav><ul>
+                <li>Welcome to my website.<br/></li>
+                <li><a href="/CV And Me/cv.html">About me</a></li><br/>
+                <li><a href="/CV And Me/education.html">Education</a></li><br/>
+                  <li><a href="/CV And Me/experience.html">Experience</a></li> <br/>
+            <li><a href="/Interests/Sports.html">Sports</a></li> <br/>
+            <li><a href="/Interests/Travel.html">Travel</a></li> <br/>
+            <li><a href="/ebusiness/ebus1.php">Cloud Services Online Shop</a></li>
+        </ul></nav>
          <button onclick="window.location.href='/menu.html'" class="button button5">Back</button><br/>
          <h1>Work Experience</h1>
          <br/>
