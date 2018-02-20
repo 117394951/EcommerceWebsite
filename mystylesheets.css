@@ -1,16 +1,14 @@
 html,body{
   width:100%;
+  background-color:rgb(204, 255, 255);
 }
-body{
-  background-image: url("https://s-media-cache-ak0.pinimg.com/originals/70/b6/e0/70b6e0627a7110816e317b8101aa8d8e.jpg")  ;
-  background-size: cover;
-}
-.button {
+
+button {
   display: inline-block;
   border-radius: 4px;
   background-color: #808080;
   border: none;
-  color: #C0C0C0;
+  color: #;
   text-align: center;
   font-size: 28px;
   padding: 20px;
@@ -20,14 +18,14 @@ body{
   margin: 5px;
 }
 
-.button span {
+button span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.button span:after {
+button span:after {
   content: '\00bb';
   position: absolute;
   opacity: 0;
@@ -36,11 +34,11 @@ body{
   transition: 0.5s;
 }
 
-.button:hover span {
+button:hover span {
   padding-right: 25px;
 }
 
-.button:hover span:after {
+button:hover span:after {
   opacity: 1;
   right: 0;
 }

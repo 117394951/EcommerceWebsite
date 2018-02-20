@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+          .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #008CBA;
+  border: none;
+  color: #e7e7e7;
+  text-align: center;
+  font-size: 28px;
+  padding: 15px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 15px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding:  5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 8px;
+    margin: 1px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button5 {
+    background-color: white;
+    color: black;
+    border: 3px solid #555555;
+}
+
+.button5:hover {
+    background-color: #555555;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+      </style>
+      <meta charset="utf-8"/>
+            <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
+            <link rel="stylesheet" href="int_pages.css" type="text/css"/>
+             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+            <!-- Adding bootstrap-->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        
+            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
+
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
+            
+            
+            <script type="text/javascript">
+                $(document).ready(function() {
+	            $('#pagepiling').pagepiling();
+                });
+            </script>
+  </head>
+  <body>  
+      
+      <nav>
+             <ul>
+                <li>Welcome to my website.<br/></li>
+                <li><a href="/CV And Me/cv.html">About me</a></li>
+                <li><a href="/CV And Me/education.html">Education</a></li>
+                <li><a href="/CV And Me/experience.html">Experience</a></li> 
+                <li><a href="/Interests/Sports.html">Sports</a></li> 
+                <li><a href="/Interests/Travel.html">Travel</a></li> 
+                <li><a href="/Interests/cloudservices.html">Cloud Services</a></li>
+                <li><a href="/ebusiness/ebus1.php">Cloud Services Online Shop</a></li>
+            </ul>
+        </nav>
+      
+        <div id="pagepiling">
+	        <div class="section" id="section1">Cloud Services</div>
+	        <div class="section" id="section2"><strong>It's Cheaper!</strong><br/>Cloud computing requires less capital expenditure plus it does not eat up physical maintenance fees. It can be a core element of strategy, and occasionally, be the cornerstone of competitive superiority and market dominance.</div>
+	        <div class="section" id="section3"><strong>Flexibility</strong><br/> is one of cloud computing’s major benefits and it’s one of the main reasons why I love it! Cloud computing allows me to access my data and files from any device with a wifi connection, whether i'm at home or at college.</div>
+	        <div class="section" id="section4"><strong>Storage</strong><br/>I never have to worry about running out of storage. There is never a time when my photos, documents and data will not be updated. So long to the days of notifications notifying me i have run out of storage.
+	        <button href="travel.html" class="button" style="vertical-align:middle"><span>Next </span></button><br/>
+	        </div>
+        </div>
+  </body>
+</html>

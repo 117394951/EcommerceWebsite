@@ -2,6 +2,38 @@
 <html>
     <head>
          <style>
+         
+         ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+         
 .button {
   display: inline-block;
   border-radius: 4px;
@@ -96,7 +128,20 @@
             
     </head>
     <body>
-        <button onclick="window.location.href='/menu.html'" class="button button5">Back</button><br/>
+        
+        <nav>
+             <ul>
+                <li>Welcome to my website.<br/></li>
+                <li><a href="/CV And Me/cv.html">About me</a></li>
+                <li><a href="/CV And Me/education.html">Education</a></li>
+                <li><a href="/CV And Me/experience.html">Experience</a></li> 
+                <li><a href="/Interests/Sports.html">Sports</a></li> 
+                <li><a href="/Interests/Travel.html">Travel</a></li> 
+                <li><a href="/Interests/cloudservices.html">Cloud Services</a></li>
+                <li><a href="/ebusiness/ebus1.php">Cloud Services Online Shop</a></li>
+            </ul>
+        </nav>
+        
         <div id="pagepiling">
 	        <div class="section" id="section1">Most travelled To: Perth, Australia</div>
 	        <div class="section" id="section2">Want to visit: New York</div>
