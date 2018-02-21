@@ -1,44 +1,68 @@
-html,body{
-  width:100%;
-  background-color:rgb(204, 255, 255);
-}
-
-button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #808080;
-  border: none;
-  color: #0000;
-  text-align: center;
-  font-size: 28px;
-  padding: 20px;
-  width: 200px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 5px;
-}
-
-button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-button:hover span {
-  padding-right: 25px;
-}
-
-button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
+html,body{ background-image: url("https://i0.wp.com/hithardnews.com/wp-content/uploads/2016/11/Grey-Background.jpg?fit=1600%2C1000");
+               background-repeat:initial;
+       }
+       
+      ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            
+            nav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                position:fixed;
+                width:100%;
+            }
+            
+            li {
+                float: left;
+            }
+            
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            
+            /* Change the link color to #111 (black) on hover */
+            li a:hover {
+                background-color:grey;
+                color:silver;
+            }
+            
+            #navpanel{
+               width:900px;
+               padding-left:300px;
+                       }
+           
+           .containerqual{
+             position:absolute;
+             top:55%;
+             left:0%;
+           }
+           
+           .containerprim{
+             position:absolute;
+             top:18%;
+             left:5%;}
+          
+           
+           .containeruni{
+             position:absolute;
+             top:18%;
+             left:65%;}
+           
+           .containersec{
+             position:absolute;
+             top:18%;
+             left:35%;
+           }
+           
+           
+           #h2{background-color:silver;}
