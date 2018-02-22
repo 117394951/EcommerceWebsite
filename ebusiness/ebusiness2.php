@@ -5,40 +5,71 @@ session_start();
 
 
 
-<!DOCTYPE html>
 <html>
     <head>
         
-        <title> Enter Details</title>
+        <style type="text/css">
+            
+        </style>
         
         
+        <title>Enter Details</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="../mystylesheets.css" type="text/css">
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     
     <body>
+        <PHP><head><link href="ebus.css" rel="stylesheet" type="text/css"></head></PHP>
+        <nav>
+            <ul>
+                <li><a href="/CV And Me/cv.html">About me</a></li>
+                <li><a href="/CV And Me/education.html">Education</a></li>
+                <li><a href="/CV And Me/experience.html">Experience</a></li>
+                <li><a href="/Interests/Sports.html">Sports</a></li>
+                <li><a href="/Interests/Travel.html">Travel</a></li>
+                <li><a href="/Interests/cloudservices.html">Cloud Services</a></li>
+                <li><a href="/ebusiness/ebus1.php">Cloud Services Online Shop</a></li>
+            </ul>
+        </nav>
+        <br/><br/><br/><br/><br/><br/>
+        <h2 id="h2">Please enter your payment details.</h2>
+        <br/>
         
-        <h4>Please enter your payment details.</h4>
-        
-            <br />
+        <div id="calcbox">
             
-            <form method = "POST" action = "ebusiness3.php">
+        <form method = "POST" action = "ebusiness3.php">
+                <br>
+                <label for = "name">
+                    <strong>Name:</strong>
+                    
+                    <input type = "text" id="name" name="name"/>
+                </label>
+                <br/><br/>
+                
+                <label for "email">
+                        <strong>Email:</strong>
+                        
+                        &nbsp;<input type = "text" id ="email" name="email"/>
+                </label>
+                <br/><br/> 
                 
                 <label for="user_pin">
-                     PIN 
+                        <strong>Pin:</strong>
                 </label>
                 
+                &nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
-                    
-                <button type="Submit" id="btnPurchase" disabled> 
+                <br/><br/>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="buttoncalc" type="Submit" id="btnPurchase" disabled>
                     Proceed with Purchase 
                 </button>
                 
-            </form>
-            
-            <br />
-            
-            <button onClick="validateDetails()"> Validate </button>
+        </form>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="buttoncalc" onClick="validateDetails()">Validate </button>
+        </div>
         
         <script type="text/javascript" src="ebus2_validator.js"></script>
         
@@ -47,7 +78,5 @@ session_start();
         $_SESSION["total"] = $_POST["total"];
         ?>
     </body>
-    
-    
-    
+   
 </html>

@@ -1,0 +1,18 @@
+#calcbox{
+        position:absolute;
+        left:35%;
+        background-color:silver;
+        }
+        
+        
+#buttoncalc{
+        background-color: silver;
+        color: black;
+        border: 2px solid #555555;
+        margin:15px;
+           }
+
+#buttoncalc:hover {
+        background-color: #555555;
+        color: white;
+                  }
