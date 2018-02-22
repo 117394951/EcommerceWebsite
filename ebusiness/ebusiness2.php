@@ -63,9 +63,9 @@ session_start();
                 <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
                 <br/><br/>
                 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="buttoncalc" type="Submit" id="btnPurchase" disabled>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ebusiness3.php"><button id="buttoncalc" type="Submit" id="btnPurchase" disabled>
                     Proceed with Purchase 
-                </button>
+                </a></button>
                 
         </form>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="buttoncalc" onClick="validateDetails()">Validate </button>
