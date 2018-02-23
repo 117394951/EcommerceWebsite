@@ -43,8 +43,8 @@ html,body{ background-image: url("https://i0.wp.com/hithardnews.com/wp-content/u
                
         .containerqual{
             position:absolute;
-            top:55%;
-            left:0%;
+            top:65%;
+            left:5%;
                        }
                
         .containerprim{
@@ -68,82 +68,3 @@ html,body{ background-image: url("https://i0.wp.com/hithardnews.com/wp-content/u
         #h2{
             background-color:silver;
         }
-        
-        
-        .button1 {
-  display: inline-block;
-  border-radius: 4px;
-  background-color:#333;
-  border: none;
-  color:white;
-  text-align: center;
-  font-size: 28px;
-  padding: 5px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 25px;
-}
-
-.button1 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button1 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button1:hover span {
-  padding-right: 25px;
-}
-
-.button1:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-
-      .button2 {
-  display: inline-block;
-  border-radius: 4px;
-  background-color:#333;
-  border: none;
-  color:white;
-  text-align: center;
-  font-size: 28px;
-  padding: 5px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-}
-          
-.button2 span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button2 span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  transition: 0.5s;
-}
-
-.button2:hover span {
-  padding-right: 25px;
-}
-
-.button2:hover span:after {
-  opacity: 1;
-  right: 0;
-}

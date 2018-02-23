@@ -1,111 +1,50 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <style>
-         
-         ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
-}
-         
-.button {
-  display: inline-block;
-  border-radius: 4px;
-  background-color: #008CBA;
-  border: none;
-  color: #e7e7e7;
-  text-align: center;
-  font-size: 28px;
-  padding: 15px;
-  width: 150px;
-  transition: all 0.5s;
-  cursor: pointer;
-  margin: 15px;
-}
-
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-</style>
-
-<style>
-    <style>
-.button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding:  5px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 8px;
-    margin: 1px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
-
-.button5 {
-    background-color: white;
-    color: black;
-    border: 3px solid #555555;
-}
-
-.button5:hover {
-    background-color: #555555;
-    color: white;
-}
+                    <style type="text/css">
+                    #aus {
+                        position:absolute;
+                        top:10%;
+                        left:5%;
+                        width:350px;
+                        height:250px;
+                        }
+                    
+                        ul {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    nav {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        background-color: #333;
+                    }
+                    
+                    li {
+                        float: left;
+                    }
+                    
+                    li a {
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                    }
+                    
+                    /* Change the link color to #111 (black) on hover */
+                    li a:hover {
+                        background-color: #111;
+                    }
 </style>
 
         <meta charset="utf-8"/>
-        <title>Sports</title>
+        <title>Travel</title>
+        <link rel="stylesheet" href="../ebusiness/ebus.css" type="text/css">
         <link rel="stylesheet" href="../mystylesheet.css" type="text/css"/>
         <link rel="stylesheet" href="int_pages.css" type="text/css"/>
          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -143,13 +82,18 @@ li a:hover {
         </nav>
         
         <div id="pagepiling">
-	        <div class="section" id="section1">Most travelled To: Perth, Australia</div>
-	        <div class="section" id="section2">Want to visit: New York</div>
+	        <div class="section" id="section1"><img id="aus" src="https://www.vectorportal.com/img_novi/australterr-vector-map_2505.jpg"><strong>Most travelled To: Perth, Australia</strong><br>
+	        I've been to Australia twice in my life. <br>My uncle moved there in 2010 and it was great to see him again, and also to meet his new daughters!
+	        </div>
+	        <div class="section" id="section2"><strong>Want to visit: New York</strong><br>
+	        The skyscrapers, shopping, accents and coffee. What's not to love?<br>One day I hope to move to New York to experience the busy lifestyle and culture. The concrete jungle is where dreams are made of!
+	        </div>
 	        <div class="section" id="section3">
-	            Settle in: London
-	            <br/>
+	            <strong>Settle In: Ireland</strong><br>
+	            There's no place like home! <br>I love the buzz and warmth of a city in Ireland, yet within a short distance there is always a peaceful retreat in the green countryside.
+	            <br><br>
 	            
-	            	        <button href="/CV And Me/menu.html" class="button" style="vertical-align:middle"><span>Back to my Menu</span></button><br/>
+	            	        <a href="cloudservices.html"><button id="buttoncalc" color="black">Next</a></button>
 	        </div>
         </div>
     </body>
