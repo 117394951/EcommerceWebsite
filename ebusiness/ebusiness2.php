@@ -24,13 +24,15 @@ session_start();
         <PHP><head><link href="ebus.css" rel="stylesheet" type="text/css"></head></PHP>
         <nav>
             <ul>
-                <li><a href="/CV And Me/cv.html">About me</a></li>
-                <li><a href="/CV And Me/education.html">Education</a></li>
-                <li><a href="/CV And Me/experience.html">Experience</a></li>
+                <li><a href="/CVandMe/cv.html">About me</a></li>
+                <li><a href="/CVandMe/education.html">Education</a></li>
+                <li><a href="/CVandMe/experience.html">Experience</a></li>
                 <li><a href="/Interests/Sports.html">Sports</a></li>
                 <li><a href="/Interests/Travel.html">Travel</a></li>
                 <li><a href="/Interests/cloudservices.html">Cloud Services</a></li>
-                <li><a href="/ebusiness/ebus1.php">Cloud Services Online Shop</a></li>
+                <li><a href="/ebusiness/ebushome.php">SkyCloud Services Online Shop</a></li>
+                <li><a href="is1113117394951.herokuapp.com">Heroku</a></li>
+                <li><a href="https://github.com/117394951/is1113117394951/graphs/commit-activity">Github</a></li>
             </ul>
         </nav>
         <br/><br/><br/><br/><br/><br/>
