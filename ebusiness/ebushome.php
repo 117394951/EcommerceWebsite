@@ -2,8 +2,6 @@
 <html>
     <head>
         <title>Sky Cloud</title>
-        <link rel="stylesheet" type="ebus.css" type="text/css">
-        <link rel="stylesheet" type="text/css" href="../mystylesheets.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Adding bootstrap-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -51,14 +49,7 @@
                 text-align:center;
             }
             
-            img {
-                position:absolute;
-                left:0%;
-                top:15%;
-                float: left;
-                width: 100%;
-                height:195%;
-}
+            
 
 /* Centered text */
 .centered {
@@ -94,7 +85,7 @@
         
             <div class="container" >
                 
-                <img src="http://www.undeerc.org/Events/2011-2015/aq8/images/sky.png"/>
+                
                 
                 <img id="salesforce" src="https://upload.wikimedia.org/wikipedia/en/thumb/8/83/Salesforce_logo.svg/1200px-Salesforce_logo.svg.png">
                 <img id="cloud9" src="https://static.c9.io/nc-3.1.4166-96b9009f/static/homepage/images/AWSCloud9_logo_color_400x400.png">
@@ -103,12 +94,18 @@
                 
                 <div class="centered">
                     
-                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<h1>SkyCloud &copy;</h1><br>
-                    &nbsp;We are a cloud vendor company called Sky Cloud. We supply the latest of Cloud offerings to the market.&nbsp;</p>
+                    <h1 align="center">SkyCloud &copy;</h1><br>
+                    <p align="center">We are a cloud vendor company called Sky Cloud. We supply the latest of Cloud offerings to the market.&nbsp;</p>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <a href="ebus1.php"><button id="buttoncalc" width="500px heigth="100px" color="black">Start Shopping!</a></button>
-                    <br>
-                    <h2 id="h2">About Cloud.</h2>
+                    
+                    
+                    
+                    <a href="ebus1.php"><button id="calculatebutton" color="white" width="500px" heigth="100px" color="black">Start Shopping!</a></button>
+                    
+                    
+                    
+                    <br><br>
+                    <h2 id="h2">About the services we offer.</h2>
                     <br>
                     <ol>
                         <li><strong>Salesforce as a Service (SaaS) - Salesforce</strong></li><br>
@@ -117,7 +114,7 @@
                                     <li>Simple Access via any networked device, making it easier to manage to access data and information and keep data in sync.</li><br>
                                     <li>Familiar web-based interfaces, building on the consumer web that users already know.</li><br>
                                     <li>Accelerated feature delivery with updates rolled out weekly or monthly.</li>
-                                </ol><br>
+                                </ol><br><br><br>
                                 <a href="https://www.salesforce.com/eu/learning-centre/tech/saas/">View More.</a>
                         
                         <br><br>

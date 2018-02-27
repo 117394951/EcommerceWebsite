@@ -8,14 +8,10 @@ session_start();
 <html>
     <head>
         
-        <style type="text/css">
-            
-        </style>
-        
         
         <title>Enter Details</title>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="../mystylesheets.css" type="text/css">
+        
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
@@ -35,18 +31,20 @@ session_start();
                 <li><a href="https://github.com/117394951/is1113117394951/graphs/commit-activity">Github</a></li>
             </ul>
         </nav>
-        <br/><br/><br/><br/><br/><br/>
+        
+        <br/><br/><br/>
         <h2 id="h2">Please enter your payment details.</h2>
         <br/>
-        
+                    
+                
         <div id="calcbox">
+            <form method= "POST" action="ebus3.php">    
+            <br>
             
-        <form method = "POST" action = "ebusiness3.php">
-                <br>
                 <label for = "name">
                     <strong>Name:</strong>
                     
-                    <input type = "text" id="name" name="name"/>
+                    <input type ="text" id="name" name="name"/>
                 </label>
                 <br/><br/>
                 
@@ -56,29 +54,43 @@ session_start();
                         &nbsp;<input type = "text" id ="email" name="email"/>
                 </label>
                 <br/><br/> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Please enter your payment details.<br>
+                <label for="user_number">
+                        <strong>Card Number:</strong>
+                </label>
                 
+            
+                <input id="user_number" placeholder="Card Number" maxlength="16"/>
+                <br><br>
+            
                 <label for="user_pin">
                         <strong>Pin:</strong>
                 </label>
                 
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4"/>
                 <br/><br/>
                 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ebusiness3.php"><button id="buttoncalc" type="Submit" id="btnPurchase" disabled>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button  type="submit" id="btnPurchase" disabled>
                     Proceed with Purchase 
-                </a></button>
-                
+                </button>
+             
         </form>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="buttoncalc" onClick="validateDetails()">Validate </button>
-        </div>
         
-        <script type="text/javascript" src="ebus2_validator.js"></script>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="calculatebutton" onClick="validateDetails()">Validate </button>
+    </div>   
+    
+            <script type="text/javascript" src="ebus2_validator.js"></script>
+
         
         <?php
-        //set variables for the session
-        $_SESSION["total"] = $_POST["total"];
+            //set session variable 
+            $_SESSION["total"]= $_POST['total'];
+            $_SESSION["name"]= $_POST['name'];
+            $_SESSION["email"]= $_POST['email'];
         ?>
-    </body>
+        
    
 </html>

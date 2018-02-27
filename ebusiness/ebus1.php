@@ -1,17 +1,14 @@
-
 <html>
     <head>
         
         
             <title>Select products</title>
-            <style type="text/css">
-                
-            </style>
-            <link rel=stylesheet href="../mystylesheets.css" type="text/css">
             
+            
+
             <!-- jquery--> 
-            <script src="https://ajax.googleapps.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script type = "text/javascript" src="cost_calc.js"></script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script type = "text/javascript" src="calc_cost.js"></script>
              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             
             <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -33,15 +30,25 @@
                 <li><a href="https://github.com/117394951/is1113117394951/graphs/commit-activity">Github</a></li>
             </ul>
         </nav>
-        <br/><br/><br/><br/><br/><br/>
+        <br/><br/><br/>
         <h2 id="h2">Select a product</h2>
         <br/>
         
-            <form method= "POST" action="/ebusiness2.php">
+        
+        <div id="calcbox">
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <button id="calculatebutton" onClick="calcSub();">Calculate Cost</button>&nbsp;&nbsp;
+                        
+     
+                    <a href="ebus1.php">Clear Choice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br><br>
+        </div>
             <div id="calcbox">
+            <form method= "POST" action="ebus2.php" onsubmit="return validateForm()">
                 <label for ="salesforce">
                     &nbsp;&nbsp;
-                    <input type="radio" id="salesforce" name="product" onClick="disablebtnProceed()"/>
+                    <input type="radio" id="salesforce" name="product" onClick="disablebtnProceed()" checked/>
                     &nbsp;&nbsp;SalesForce @ $100
                 </label>
                 <br/>
@@ -82,7 +89,8 @@
                 <br>
                 
                 <label for ="vat">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                    <strong>Vat @ 10%:</strong>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                    
+                    <strong>Vat @ 10%:</strong>
                     <input type = "text" id ="vat" name ="vat" readonly />
                 </label><br>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__________________________<br>
@@ -93,17 +101,18 @@
                     <strong>Total:</strong>
                     <input type="text" id="total" name="total" value="0.00" readonly/>
                 </label>
-                <br/><br/>
+                <br/><br/><br>
           
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ebusiness2.php"><button id="buttoncalc" type="submit" id="btnProceed" disable>Add to Shopping Cart</a></button>
-                 <br> 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+                
+                
+               <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+                
             </form>
             
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button id="buttoncalc" onClick="calcSub();calcDisVatTotal()">Calculate Cost</button>
-                    
- 
-                <a href="ebus1.php"><button id="buttoncalc" color="black">Clear Choice</a></button>
-        </div>
-  
+            <br/>
+         </div>
+                
     </body>
 </html>
