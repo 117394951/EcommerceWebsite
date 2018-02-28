@@ -71,7 +71,7 @@ session_start();
                 <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4"/>
                 <br/><br/>
                 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <button  type="submit" id="btnPurchase" disabled>
                     Proceed with Purchase 
                 </button>
@@ -79,11 +79,11 @@ session_start();
         </form>
         
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="calculatebutton" onClick="validateDetails()">Validate </button>
+            <button class="thebtn" onClick="validateDetails()">Validate </button><br><br>
     </div>   
     
             <script type="text/javascript" src="ebus2_validator.js"></script>
-
+            
         
         <?php
             //set session variable 

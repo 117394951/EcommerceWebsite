@@ -59,7 +59,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-                
+               
+               
+ 
         </style>
     </head>
     <body>
@@ -100,7 +102,7 @@
                     
                     
                     
-                    <a href="ebus1.php"><button id="calculatebutton" color="white" width="500px" heigth="100px" color="black">Start Shopping!</a></button>
+                    <a href="ebus1.php"><button class="thebtn" color="white" width="500px" heigth="100px" color="black">Start Shopping!</a></button>
                     
                     
                     

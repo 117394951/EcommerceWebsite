@@ -1,5 +1,7 @@
 <?php
 session_start();
+$name = $_REQUEST['name'];
+$email = $_REQUEST['email'];
 ?>
 <!DOCTYPE html>
 
@@ -10,23 +12,33 @@ session_start();
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
+        
+        <style type="text/css">
+            #receipt{
+                font-size:26px;
+                text-align:center;
+                
+            }
+        </style>
     </head>
     <body>
         <PHP><head><link href="ebus.css" rel="stylesheet" type="text/css"></head></PHP>
         <br><br><br><br>
-      &nbsp;&nbsp;&nbsp;&nbsp;<div id="calcbox">
-          
-          <h1 align="center">SkyCloud &copy;</h1><br>
-          <h2 id="h2">Purchase Receipt</h2><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;<div id="calcbox2">
+        <div id="receipt">  
+          <h1 align="center">SkyCloud&copy;</h1><br>
+          <h2 id="h2">&nbsp;&nbsp;&nbsp;&nbsp;Purchase Receipt&nbsp;&nbsp;&nbsp;&nbsp;</h2><br>
         <?php
         //echo session variables that were set on previous page 
         echo "Total is: $" . $_SESSION["total"] .".<br>";
-        echo "Name: " . $_SESSION["name"] .".<br>";
-        echo "Email: " . $_SESSION["email"] .".<br>";
+        echo ("Name: ". $name);
+        echo ("<br>Email: " . $email);
         ?>
         
         <br><br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="calculatebutton" onclick="print()">Print your receipt.</button>
+        
+        <button class="thebtn" onclick="print()">Print your receipt.</button>
     </div>
         
         

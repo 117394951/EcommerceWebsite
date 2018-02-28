@@ -2,7 +2,7 @@
     <head>
         
         
-            <title>Select products</title>
+            <title>Select Product</title>
             
             
 
@@ -36,9 +36,9 @@
         
         
         <div id="calcbox">
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <button id="calculatebutton" onClick="calcSub();">Calculate Cost</button>&nbsp;&nbsp;
+                    <button class="thebtn" onClick="calcSub();">Calculate Cost</button>&nbsp;&nbsp;
                         
      
                     <a href="ebus1.php">Clear Choice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -107,7 +107,7 @@
                 
                 
                 
-               <button type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+               <button class="thebtn" type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
                 
             </form>
             
