@@ -1,7 +1,11 @@
 /* global $ */
+
+/*validating the card number and pin*/
 function validateDetails(){
+            /*declaring variables*/
             var pin;
             var number;
+            /*assingingvalues to our variables*/
             pin = document.getElementById("user_pin").value;
             pin = document.getElementById("user_number").value;
     
@@ -17,7 +21,7 @@ function validateDetails(){
                     if (number==""){
                         alert("Please enter your Card Number");
                     }
-                    else if (String(pin).length<16){
+                    else if (String(number).length<16){
                         alert("Please make sure your Card Number is accurate");
                     }
                     else{

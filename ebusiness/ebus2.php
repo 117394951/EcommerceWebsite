@@ -3,21 +3,20 @@
 session_start();
 ?>
 
-
-
 <html>
     <head>
-        
-        
         <title>Enter Details</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
     </head>
     
     <body>
+        
         <PHP><head><link href="ebus.css" rel="stylesheet" type="text/css"></head></PHP>
+        
         <nav>
             <ul>
                 <li><a href="/CVandMe/cv.html">About me</a></li>
@@ -32,12 +31,13 @@ session_start();
             </ul>
         </nav>
         
-        <br/><br/><br/>
-        <h2 id="h2">Please enter your payment details.</h2>
-        <br/>
+            <br/><br/><br/>
+        
+        <h2 id="h2">Please enter your payment details.</h2><br/>
                     
                 
         <div id="calcbox">
+            <!--creating form-->
             <form method= "POST" action="ebus3.php">    
             <br>
             
@@ -82,7 +82,7 @@ session_start();
             <button class="thebtn" onClick="validateDetails()">Validate </button><br><br>
     </div>   
     
-            <script type="text/javascript" src="ebus2_validator.js"></script>
+        <script type="text/javascript" src="ebus2_validator.js"></script>
             
         
         <?php
@@ -91,6 +91,5 @@ session_start();
             $_SESSION["name"]= $_POST['name'];
             $_SESSION["email"]= $_POST['email'];
         ?>
-        
-   
+
 </html>

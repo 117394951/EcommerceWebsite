@@ -1,10 +1,9 @@
 /* global $ */
+
+/*declaring variables */
 var argSubTotal;
-var argDiscount;
 
-
-
-
+/*assigning amount to our variable*/
 function calcSub(){
     
     if(document.getElementById('salesforce').checked) { 
@@ -22,15 +21,12 @@ function calcSub(){
     else {
         argSubTotal = 400;
             }
-            
- 
-    calcDisVatTotal(argSubTotal);
+/*passing variable*/          
+  calcDisVatTotal(argSubTotal);
 }
             
-            
-            
- 
- function calcDisVatTotal(parmSubTotal) {
+
+function calcDisVatTotal(parmSubTotal) {
         var parmSubTotal = (argSubTotal);
         var discountAmt = 0.05;
         var vatAmt = 0.10;
@@ -39,33 +35,26 @@ function calcSub(){
         vatAmt = (parmSubTotal - discountAmt) * vatAmt;
         totalPrice = (parmSubTotal-discountAmt) + (vatAmt);
         
-    Display(argSubTotal,discountAmt,vatAmt,totalPrice);
-    }
+        Display(argSubTotal,discountAmt,vatAmt,totalPrice);
+}
                                         
                                         
-                        
+/*assigning parameter to values*/
 function Display(parm1, parm2, parm3, parm4){
     
-            document.getElementById("subtotal").value = parm1;
-            document.getElementById("discount").value = parm2;
-            document.getElementById("vat").value = parm3;
-            document.getElementById("total").value = parm4;
- 
-                        enablebtnProceed();                        
+        document.getElementById("subtotal").value = parm1;
+        document.getElementById("discount").value = parm2;
+        document.getElementById("vat").value = parm3;
+        document.getElementById("total").value = parm4;
+
+        enablebtnProceed();                        
 }
                                                 
-                                                
-                                                
- 
 function enablebtnProceed() {
     
-     $('#btnProceed').prop('disabled', false);
+    $('#btnProceed').prop('disabled', false);
                                 }
  
 function disablebtnProceed() {
     $('#btnProceed').prop('disabled', true);
-}
-                                
-                                
-                                
-                                
+}     

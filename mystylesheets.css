@@ -1,70 +1,70 @@
-html,body{ background-image: url("https://i0.wp.com/hithardnews.com/wp-content/uploads/2016/11/Grey-Background.jpg?fit=1600%2C1000");
-                   background-repeat:initial;
-               }
+html,body{background-image: url("https://i0.wp.com/hithardnews.com/wp-content/uploads/2016/11/Grey-Background.jpg?fit=1600%2C1000");
+            background-repeat:initial;
+}
            
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            }
-                
-        nav {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            position:fixed;
-            width:100%;
-            }
-                
-        li {
-            float: left;
-            }
-                
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-            }
-                
-                /* Change the link color to #111 (black) on hover */
-        li a:hover {
-            background-color:grey;
-            color:silver;
-                    }
-                
-        #navpanel{
-            width:900px;
-            padding-left:300px;
-                 }
-               
-        .containerqual{
-            position:absolute;
-            top:65%;
-            left:5%;
-                       }
-               
-        .containerprim{
-            position:absolute;
-            top:18%;
-            left:5%;
-                    }
-              
-               
-        .containeruni{
-            position:absolute;
-            top:18%;
-            left:65%;
-                    }
-               
-        .containersec{
-            position:absolute;
-            top:18%;
-            left:35%;
-                       }
-        #h2{
-            background-color:silver;
-        }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+        
+nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position:fixed;
+    width:100%;
+}
+        
+li {
+    float: left;
+}
+        
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+        
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color:grey;
+    color:silver;
+}
+        
+#navpanel{
+    width:900px;
+    padding-left:300px;
+}
+       
+.containerqual{
+    position:absolute;
+    top:65%;
+    left:5%;
+}
+       
+.containerprim{
+    position:absolute;
+    top:18%;
+    left:5%;
+}
+      
+.containeruni{
+    position:absolute;
+    top:18%;
+    left:65%;
+}
+       
+.containersec{
+    position:absolute;
+    top:18%;
+    left:35%;
+}
+
+#h2{
+    background-color:silver;
+}

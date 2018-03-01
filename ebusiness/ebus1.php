@@ -1,22 +1,20 @@
 <html>
     <head>
         
+        <title>Select Product</title>
         
-            <title>Select Product</title>
-            
-            
-
-            <!-- jquery--> 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script type = "text/javascript" src="calc_cost.js"></script>
-             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-            
-            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!-- jquery--> 
+        <script type = "text/javascript" src="calc_cost.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        
     </head>
+    
     <body>
+        
         <PHP><head><link href="ebus.css" rel="stylesheet" type="text/css"></head></PHP>
+        
         <nav>
             <ul>
                 <li><a href="/CVandMe/cv.html">About me</a></li>
@@ -30,22 +28,29 @@
                 <li><a href="https://github.com/117394951/is1113117394951/graphs/commit-activity">Github</a></li>
             </ul>
         </nav>
+        
         <br/><br/><br/>
-        <h2 id="h2">Select a product</h2>
-        <br/>
+        
+        <h2 id="h2">Select a product</h2><br/>
         
         
         <div id="calcbox">
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                
                     <button class="thebtn" onClick="calcSub();">Calculate Cost</button>&nbsp;&nbsp;
                         
      
                     <a href="ebus1.php">Clear Choice</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <br><br>
+                        <br><br>
+                    
         </div>
-            <div id="calcbox">
+        
+        <div id="calcbox">
+            <!--creating form-->
             <form method= "POST" action="ebus2.php" onsubmit="return validateForm()">
+                
+                <!--populating the form with label and input boxs-->
                 <label for ="salesforce">
                     &nbsp;&nbsp;
                     <input type="radio" id="salesforce" name="product" onClick="disablebtnProceed()" checked/>
@@ -93,7 +98,7 @@
                     <strong>Vat @ 10%:</strong>
                     <input type = "text" id ="vat" name ="vat" readonly />
                 </label><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__________________________<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__________________________<br>
                  <br>
                  
                 <label for="Total">
@@ -102,7 +107,6 @@
                     <input type="text" id="total" name="total" value="0.00" readonly/>
                 </label>
                 <br/><br/><br>
-          
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 
                 

@@ -3,45 +3,48 @@
     <head>
         
         <title>is1113117394951</title>
-        
+        <!--Css style for a vertical navigation bar -->
         <style type="text/css">
+
+                ul {
+                    list-style-type: none;
+                    position:fixed;
+                    width: 100px;
+                    background-color: #333;
+                    height:100%;
+                }
+                    
+                li a {
+                    display: block;
+                    color:silver;
+                    width:100px;
+                }
+                    
+                /* Change the link color on hover */
+                li a:hover {
+                    background-color:grey;
+                    color: white;
+                }
+
+                p{
+                    position:absolute;
+                    top:90%;
+                    left:10%;
+                }
+                
                 #social{
                     position:absolute;
                     left:85%;
                     top:85%;
                 }
                 
-                ul {
-                        list-style-type: none;
-                        position:fixed;
-                        width: 100px;
-                        background-color: #333;
-                        height:100%;
-                    }
-                    
-                li a {
-                        display: block;
-                        color:silver;
-                        width:100px;
-                     }
-                    
-                    /* Change the link color on hover */
-                li a:hover {
-                        background-color:grey;
-                        color: white;
-                     }
-
-                p{
-                position:absolute;
-                top:90%;
-                left:10%;
-                }
         </style>
         
             <link rel="stylesheet" href="mystylesheets.css" type="text/css"/>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
             <!-- Adding bootstrap-->
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    
     </head>
     <body>
         
@@ -59,19 +62,20 @@
             
         <div class="containersec">
             
+            <!-- Adding Text as decoration-->
             <div style="text-shadow:1px 1px 5px rgba(255,43,156,1);font-weight:normal;color:#FFFFFF;letter-spacing:4pt;word-spacing:2pt;font-size:60px;text-align:center;font-family:courier new, courier, monospace;line-height:1;"><br/><br/>Rebecca Coleman</div>
             
         </div>
         
         
-            <p><strong>Copyright</strong>&nbsp;Rebecca Coleman, all rights reserved.</p>
-             <div id="social">
-                 Find me on my social media!
-                 <br><a href="https://www.linkedin.com/in/rebecca-coleman-313308151/">LinkedIn</a>
-                 <br><a href="https://www.snapchat.com/">Snapchat</a>
-                 <br><a href="https://www.instagram.com/">Instagram</a>
-                
-             </div>
+        <p><strong>Copyright</strong>&nbsp;Rebecca Coleman, all rights reserved.</p>
+            
+        <div id="social">
+                Find me on my social media!
+                <br><a href="https://www.linkedin.com/in/rebecca-coleman-313308151/">LinkedIn</a>
+                <br><a href="https://www.snapchat.com/">Snapchat</a>
+                <br><a href="https://www.instagram.com/">Instagram</a>
+        </div>
             
     </body>
 </html>

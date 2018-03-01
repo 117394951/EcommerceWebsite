@@ -1,46 +1,48 @@
 <!DOCTYPE html>
 <html>
     <head>
+        
         <title>Sports</title>
-         <style type="text/css">
-              ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
+        <!--allowing a horizontal navigation bar-->
+        <style type="text/css">
+         
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
             }
                 
-        nav {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #333;
-            position:fixed;
-            width:100%;
+            nav {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333;
+                position:fixed;
+                width:100%;
             }
-                
-        li {
-            float: left;
+                    
+            li {
+                float: left;
             }
-                
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
+                    
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
             }
-                
-                /* Change the link color to #111 (black) on hover */
-        li a:hover {
-            background-color:grey;
-            color:silver;
-                    }  
+                    
+                    /* Change the link color to #111 (black) on hover */
+            li a:hover {
+                background-color:grey;
+                color:silver;
+            }
+            
          </style>
 
         <meta charset="utf-8"/>
-        <title>Sports</title>
-                    
 
         <link rel="stylesheet" href="int_pages.css" type="text/css"/>
         <link rel="stylesheet" href="../ebusiness/ebus.css" type="text/css">
@@ -48,23 +50,21 @@
         <!-- Adding bootstrap-->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        
-            <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
+        <!--adding page piling css to each section-->
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.css" />
 
-            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
-            
-            
-            <script type="text/javascript">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.4/jquery.pagepiling.js"></script>
+        <script type="text/javascript">
                 $(document).ready(function() {
 	            $('#pagepiling').pagepiling();
                 });
-            </script>
+        </script>
+        
     </head>
+    
     <body>
            <nav>
-               
                 <ul>
                     <li><a href="/CVandMe/cv.html">About me</a></li>
                     <li><a href="/CVandMe/education.html">Education</a></li>
@@ -79,12 +79,14 @@
             </nav>  
 
         <div id="pagepiling">
+            
 	        <div class="section" id="section1"><strong>The Gym<br>That is a sport right?</strong><br>I am now very fond of kitting fit and healthy. I visit the gym 5 out of 7 days a week. I enjoy weight liftig, and I like to be able to push myself to get stronger each day.<br>I feel much healthier and happier and I have gained so much confidence just from my hobby. I also enjoy part-taking in excercise classes, such as spinning and kettlebells.<br/></div>
 	        <div class="section" id="section2"><strong>Favourite Sport: Camoige</strong><br/>I very much enjoy physical sports such as Camogie. I played Camogie with Ballinhassig Camogie Club for seven years. <br>One of my greatest achievements playing Camogie was winning a County Medal in 2010.<br> I co-operated well with my team mates and on many occasions took on the role as Captain, <br>I always ensured that I motivated and encouraged my team all the time. <br>I was a very dedicated player attending all training sessions and matches. </div>
 	        <div class="section" id="section3">Least favourite Sport: nothing in particular but i guess frisbee is a boring sport.
 	        <br><br>
-	        <a href="Travel.html"><button id="buttoncalc" color="black" >Next</a></button>
+	        <a href="Travel.html"><button class="thebtn" >Next</a></button>
 	        </div>
+	        
         </div>
         
     </body>
