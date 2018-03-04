@@ -18,6 +18,7 @@ function validateDetails(){
                     else{
                         enablebtnPurchase();
                     }
+                    
                     if (number==""){
                         alert("Please enter your Card Number");
                     }

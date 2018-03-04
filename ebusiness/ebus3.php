@@ -15,12 +15,11 @@ $email = $_REQUEST['email'];
         
         
         <style type="text/css">
-        
             #receipt{
-                font-size:26px;
-                text-align:center;    
+        font-size:26px;
+        text-align:center;  
+        background-color:#eae6f4;
             }
-            
         </style>
         
     </head>
@@ -28,26 +27,30 @@ $email = $_REQUEST['email'];
         
         <PHP><head><link href="ebus.css" rel="stylesheet" type="text/css"></head></PHP>
         
-            <br><br><br><br>
-            &nbsp;&nbsp;&nbsp;&nbsp;
             
-        <div id="calcbox2">
-            <div id="receipt"
+        <br><br><br>  
+        
+            <div id="receipt">
                   <h1 align="center">SkyCloud&copy;</h1><br>
-                  <h2 id="h2">&nbsp;&nbsp;&nbsp;&nbsp;Purchase Receipt&nbsp;&nbsp;&nbsp;&nbsp;</h2><br>
+                  <h2 id="h2" align="center">Purchase Receipt</h2><br>
                   
-                    <?php
-                    //echo session variables that were set on previous page 
-                    echo "Total is: $" . $_SESSION["total"] .".<br>";
-                    echo ("Name: ". $name);
-                    echo ("<br>Email: " . $email);
-                    ?>
-                    
+                      Order Number: 231839<br>
+                      
+                        <?php
+                        //echo session variables that were set on previous page 
+                        echo "Total is: $" . $_SESSION["total"] .".<br>";
+                        echo ("Name: ". $name);
+                        echo ("<br>A confirmation of your purchase has been sent to your e-mail " . $email);
+                        ?>
+                        
                     <br><br>
-                    
+                    Thank you for shopping with SkyCloud&copy;.<br><br>
+
                     <button class="thebtn" onclick="print()">Print your receipt.</button><br>
+                    
+                
             </div>
-        </div>
+        
         
         
         <script>
