@@ -52,7 +52,7 @@ $email = $_REQUEST['email'];
             </div>
         
         
-        
+        <!-- creating function which prints the page-->
         <script>
                 function print() {
                     window.print();

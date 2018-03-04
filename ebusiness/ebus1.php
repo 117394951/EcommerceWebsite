@@ -107,11 +107,11 @@
                     <input type="text" id="total" name="total" value="0.00" readonly/>
                 </label>
                 <br/><br/><br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
                 
                 
                 
-               <button class="thebtn" type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
+              <button class="thebtn" type="submit" id="btnProceed" disabled>Add to Shopping Cart</button>
                 
             </form>
             

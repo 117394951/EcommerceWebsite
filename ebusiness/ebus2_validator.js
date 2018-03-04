@@ -4,30 +4,32 @@
 function validateDetails(){
             /*declaring variables*/
             var pin;
-            var number;
+            var email;
+            var name;
             /*assingingvalues to our variables*/
             pin = document.getElementById("user_pin").value;
-            pin = document.getElementById("user_number").value;
-    
+            email =document.forms["myForm"]["email"].value;
+            name = document.forms["myForm"]["name"].value;
+
+
                     if (pin == ""){
                             alert("Please enter your PIN");
                                     }
                     else if (String(pin).length < 4){
                             alert("Please make sure your PIN is accurate");
                                     }
+                    else if (name == "") {
+                            alert("Please enter your name");
+                            return false;
+                                    }
+                    else if (email == "") {
+                            alert("Please enter your email");
+                            return false;
+                                    }
                     else{
                         enablebtnPurchase();
                     }
                     
-                    if (number==""){
-                        alert("Please enter your Card Number");
-                    }
-                    else if (String(number).length<16){
-                        alert("Please make sure your Card Number is accurate");
-                    }
-                    else{
-                        enablebtnPurchase();
-                    }
                         }
 
 function enablebtnPurchase(){
