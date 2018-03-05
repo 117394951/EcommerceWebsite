@@ -12,27 +12,30 @@ $email = $_REQUEST['email'];
         
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+                <PHP><link href="ebus.css" rel="stylesheet" type="text/css"></PHP>
+
         
-        
-        <style type="text/css">
+        <style>
             #receipt{
         font-size:26px;
         text-align:center;  
         background-color:#eae6f4;
+            }
+            .center{
+                text-align:center;
             }
         </style>
         
     </head>
     <body>
         
-        <PHP><head><link href="ebus.css" rel="stylesheet" type="text/css"></head></PHP>
-        
+
             
         <br><br><br>  
         
             <div id="receipt">
-                  <h1 align="center">SkyCloud&copy;</h1><br>
-                  <h2 id="h2" align="center">Purchase Receipt</h2><br>
+                  <h1 class="center">SkyCloud&copy;</h1><br>
+                  <h2 id="h2" class="center">Purchase Receipt</h2><br>
                   
                       Order Number: 231839<br>
                       

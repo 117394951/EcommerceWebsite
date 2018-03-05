@@ -17,9 +17,19 @@
         background-image: linear-gradient(to bottom, #D6D6D6, #828282);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#D6D6D6, endColorstr=#828282);
 }
 
+
+
+
 #calcbox{
     position:absolute;
     left:35%;
+    background-color:#eae6f4;
+}
+        
+        
+#calcbox2{
+    position:absolute;
+    left:40%;
     background-color:#eae6f4;
 }
         
@@ -99,7 +109,7 @@ li a:hover {
           
 body{
         background-image: url("https://www.undeerc.org/Events/2011-2015/aq8/images/sky.png");
-        height:120%;
+        height:130%;
 }
           
           

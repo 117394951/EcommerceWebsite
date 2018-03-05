@@ -1,8 +1,11 @@
+<!DOCTYPE html>
 <html>
     <head>
         
         <title>Select Product</title>
         
+        <PHP><link href="ebus.css" rel="stylesheet" type="text/css"></PHP>
+
         <!-- jquery--> 
         <script type = "text/javascript" src="calc_cost.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -13,8 +16,7 @@
     
     <body>
         
-        <PHP><head><link href="ebus.css" rel="stylesheet" type="text/css"></head></PHP>
-        
+
         <nav>
             <ul>
                 <li><a href="/CVandMe/cv.html">About me</a></li>
@@ -65,7 +67,7 @@
                 </label>
                 <br/>
                 
-                <label for="Aws">
+                <label for="aws">
                     &nbsp;&nbsp;
                     <input type="radio" id="aws" name="product" onClick="disablebtnProceed()"/>
                     &nbsp;&nbsp;Amazon Web Services @ $300
@@ -80,13 +82,14 @@
                 </label>
                 <br/><br/>
                 
-                <label for="Subtotal">
+                <label for="subtotal">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <strong>Subtotal</strong>
+                </label>
                 <input type="text" id="subtotal" value="0.00" readonly/>
                  <br/><br/>
                  
-                 <label for = "Discount">
+                 <label for = "discount">
                     &nbsp;&nbsp;<strong>Discount @ 5%:</strong>
                     <input type = "text" id ="discount" name ="discount" readonly/>
                     <br><strong> &nbsp;&nbsp;(-Discount)</strong>
@@ -101,7 +104,7 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;__________________________<br>
                  <br>
                  
-                <label for="Total">
+                <label for="total">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <strong>Total:</strong>
                     <input type="text" id="total" name="total" value="0.00" readonly/>

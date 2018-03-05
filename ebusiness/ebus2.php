@@ -2,16 +2,15 @@
 //start the session
 session_start();
 ?>
-
+<!DOCTYPE html>
 <html>
     <head>
         <title>Enter Details</title>
-        
+        <script type="text/javascript" src="ebus2_validator.js"></script>
+
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!--jQuery-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="ebus2_validator.js"></script>
-
         
     </head>
     
@@ -36,19 +35,17 @@ session_start();
             <br/><br/><br/>
         
         <h2 id="h2">Please enter your payment details.</h2><br/>
-                    
-        <div id="calcbox">
-                        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <button class="thebtn" onClick="validateDetails()">Validate </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
-            Validate your details before you can proceed.<br><br>
-        </div>
-        
+        <div id="calcbox"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button class="thebtn" onClick="validateDetails()">Validate</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>
+                       
+        </div>            
+                
         <div id="calcbox">
             <!--creating form-->
-            <form method= "POST" action="ebus3.php">    
+            <form name="myForm" method= "POST" action="ebus3.php">    
             <br>
-            <!--populating our form-->
+            
                 <label for = "name">
                     <strong>Name:</strong>
                     
@@ -56,7 +53,7 @@ session_start();
                 </label>
                 <br/><br/>
                 
-                <label for "email">
+                <label for = "email">
                         <strong>Email:</strong>
                         
                         &nbsp;<input type = "text" id ="email" name="email"/>
@@ -78,24 +75,16 @@ session_start();
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <input type="password" id="user_pin" placeholder="Card Pin" maxlength="4"/>
                 <br/><br/>
-                
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <button  type="submit" id="btnPurchase" disabled>
-                    Proceed with Purchase 
-                </button>
-             
-        </form>
-     </div>     
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit" id="btnPurchase" disabled>Proceed with your Purchase</button>
+            </form>
             
 
-        <script type="text/javascript" src="ebus2_validator.js"></script>
-            
-    
+        </div>   
+        
         <?php
             //set session variable 
             $_SESSION["total"]= $_POST['total'];
-            $_SESSION["name"]= $_POST['name'];
-            $_SESSION["email"]= $_POST['email'];
-        ?>
-
+            ?>
+    </body>
 </html>
