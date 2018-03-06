@@ -48,19 +48,9 @@ $email = $_REQUEST['email'];
                         
                     <br><br>
                     Thank you for shopping with SkyCloud&copy;.<br><br>
+                    <a href="/ebusiness/ebushome.php" color="grey">Back to the SkyCloud Homepage</a>
 
-                    <button class="thebtn" onclick="print()">Print your receipt.</button><br>
-                    
-                
             </div>
-        
-        
-        <!-- creating function which prints the page-->
-        <script>
-                function print() {
-                    window.print();
-                }
-        </script>
         
     </body>
 </html>

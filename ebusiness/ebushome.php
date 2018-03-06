@@ -49,7 +49,7 @@
         .centered {
             background-color:#eae6f4;
             position: absolute;
-            top: 123%;
+            top: 125%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
